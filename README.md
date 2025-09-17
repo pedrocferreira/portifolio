@@ -50,6 +50,8 @@ npm run build
 
 O deploy é automático através do GitHub Actions. Basta fazer push para a branch `main` e o site será atualizado automaticamente.
 
+**Status:** ✅ Deploy ativo - https://pedrocferreira.github.io/portifolio/
+
 ## 📝 Personalização
 
 Para personalizar o portfólio:
