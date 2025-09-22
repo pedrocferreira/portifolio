@@ -30,16 +30,16 @@
           </div>
           <div class="about-text">
             <h3>Minha Trajetória</h3>
-            <p>Sou um desenvolvedor apaixonado por tecnologia e inovação, com foco especial em soluções de Inteligência Artificial e desenvolvimento web. Minha jornada começou com Python e PHP, e evoluiu para incluir tecnologias modernas de IA e LLMs.</p>
-            <p>Tenho facilidade para aprender novas tecnologias rapidamente e me adaptar a diferentes projetos e desafios. Sempre busco criar soluções eficientes e escaláveis que agreguem valor real aos negócios.</p>
-            <p>Minha experiência inclui desenvolvimento de crawlers para análise de dados ESG, criação de chatbots inteligentes com processamento de documentos, e desenvolvimento de sistemas web robustos com integrações API.</p>
+            <p>Sou um desenvolvedor Full Stack apaixonado por tecnologia e inovação, com expertise em desenvolvimento web, automação e soluções de Inteligência Artificial. Minha jornada começou com PHP e Python, evoluindo para incluir tecnologias modernas de frontend e infraestrutura.</p>
+            <p>Tenho facilidade para aprender novas tecnologias rapidamente e me adaptar a diferentes projetos e desafios. Sempre busco criar soluções eficientes e escaláveis que agreguem valor real aos negócios, desde desenvolvimento web até automação de processos e marketing digital.</p>
+            <p>Minha experiência inclui desenvolvimento de sistemas web robustos, automação com Selenium e Puppeteer, integração com APIs de IA (OpenAI, LangChain), gestão de infraestrutura com Docker e VPS, além de campanhas de marketing digital e SEO.</p>
             
             <div class="skills">
-              <span class="skill-tag">Aprendizado Rápido</span>
-              <span class="skill-tag">Soluções Escaláveis</span>
-              <span class="skill-tag">IA & Machine Learning</span>
               <span class="skill-tag">Desenvolvimento Full Stack</span>
-              <span class="skill-tag">Análise de Dados</span>
+              <span class="skill-tag">Automação & Web Scraping</span>
+              <span class="skill-tag">IA & Machine Learning</span>
+              <span class="skill-tag">DevOps & Infraestrutura</span>
+              <span class="skill-tag">Marketing Digital & SEO</span>
               <span class="skill-tag">Integração de APIs</span>
             </div>
           </div>
@@ -53,56 +53,50 @@
         <h2 class="section-title">Tecnologias</h2>
         <div class="tech-grid">
           <div class="tech-category">
-            <h3>Back-end</h3>
+            <h3>Backend</h3>
             <div class="tech-icons">
-              <div class="tech-item">
-                <i class="fab fa-python tech-icon"></i>
-                <span class="tech-name">Python</span>
-              </div>
               <div class="tech-item">
                 <i class="fab fa-php tech-icon"></i>
                 <span class="tech-name">PHP</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-node-js tech-icon"></i>
-                <span class="tech-name">Node.js</span>
               </div>
               <div class="tech-item">
                 <i class="fab fa-laravel tech-icon"></i>
                 <span class="tech-name">Laravel</span>
               </div>
               <div class="tech-item">
+                <i class="fas fa-code tech-icon"></i>
+                <span class="tech-name">CodeIgniter</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-python tech-icon"></i>
+                <span class="tech-name">Python</span>
+              </div>
+              <div class="tech-item">
                 <i class="fab fa-python tech-icon"></i>
                 <span class="tech-name">Django</span>
               </div>
-            </div>
-          </div>
-          
-          <div class="tech-category">
-            <h3>IA & LLMs</h3>
-            <div class="tech-icons">
               <div class="tech-item">
-                <i class="fas fa-link tech-icon"></i>
-                <span class="tech-name">LangChain</span>
+                <i class="fab fa-python tech-icon"></i>
+                <span class="tech-name">Flask</span>
               </div>
               <div class="tech-item">
-                <i class="fas fa-robot tech-icon"></i>
-                <span class="tech-name">OpenAI</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-search-plus tech-icon"></i>
-                <span class="tech-name">RAG</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-brain tech-icon"></i>
-                <span class="tech-name">Machine Learning</span>
+                <i class="fab fa-node-js tech-icon"></i>
+                <span class="tech-name">Node.js</span>
               </div>
             </div>
           </div>
           
           <div class="tech-category">
-            <h3>Front-end</h3>
+            <h3>Frontend</h3>
             <div class="tech-icons">
+              <div class="tech-item">
+                <i class="fab fa-js-square tech-icon"></i>
+                <span class="tech-name">JavaScript</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-angular tech-icon"></i>
+                <span class="tech-name">Angular</span>
+              </div>
               <div class="tech-item">
                 <i class="fab fa-vuejs tech-icon"></i>
                 <span class="tech-name">Vue.js</span>
@@ -112,16 +106,12 @@
                 <span class="tech-name">React</span>
               </div>
               <div class="tech-item">
-                <i class="fab fa-html5 tech-icon"></i>
-                <span class="tech-name">HTML5</span>
+                <i class="fab fa-bootstrap tech-icon"></i>
+                <span class="tech-name">Bootstrap</span>
               </div>
               <div class="tech-item">
                 <i class="fab fa-css3-alt tech-icon"></i>
-                <span class="tech-name">CSS3</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-js-square tech-icon"></i>
-                <span class="tech-name">JavaScript</span>
+                <span class="tech-name">Tailwind CSS</span>
               </div>
             </div>
           </div>
@@ -141,27 +131,99 @@
                 <i class="fas fa-leaf tech-icon"></i>
                 <span class="tech-name">MongoDB</span>
               </div>
+              <div class="tech-item">
+                <i class="fas fa-memory tech-icon"></i>
+                <span class="tech-name">Redis</span>
+              </div>
             </div>
           </div>
           
           <div class="tech-category">
-            <h3>DevOps</h3>
+            <h3>IA & Automação</h3>
             <div class="tech-icons">
+              <div class="tech-item">
+                <i class="fas fa-robot tech-icon"></i>
+                <span class="tech-name">OpenAI API</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-link tech-icon"></i>
+                <span class="tech-name">LangChain</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-brain tech-icon"></i>
+                <span class="tech-name">NLP</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-cog tech-icon"></i>
+                <span class="tech-name">Selenium</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-cog tech-icon"></i>
+                <span class="tech-name">Puppeteer</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-project-diagram tech-icon"></i>
+                <span class="tech-name">N8N</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h3>DevOps & Infraestrutura</h3>
+            <div class="tech-icons">
+              <div class="tech-item">
+                <i class="fas fa-server tech-icon"></i>
+                <span class="tech-name">VPS</span>
+              </div>
               <div class="tech-item">
                 <i class="fab fa-docker tech-icon"></i>
                 <span class="tech-name">Docker</span>
               </div>
               <div class="tech-item">
-                <i class="fab fa-linux tech-icon"></i>
-                <span class="tech-name">Linux</span>
+                <i class="fas fa-cube tech-icon"></i>
+                <span class="tech-name">Portainer.io</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-server tech-icon"></i>
+                <span class="tech-name">Nginx</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-server tech-icon"></i>
+                <span class="tech-name">Apache</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-aws tech-icon"></i>
+                <span class="tech-name">AWS</span>
               </div>
               <div class="tech-item">
                 <i class="fab fa-git-alt tech-icon"></i>
-                <span class="tech-name">Git</span>
+                <span class="tech-name">Git/GitHub</span>
               </div>
               <div class="tech-item">
-                <i class="fas fa-cube tech-icon"></i>
-                <span class="tech-name">Portainer.io</span>
+                <i class="fas fa-sync-alt tech-icon"></i>
+                <span class="tech-name">CI/CD</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h3>Marketing & SEO</h3>
+            <div class="tech-icons">
+              <div class="tech-item">
+                <i class="fas fa-search tech-icon"></i>
+                <span class="tech-name">SEO</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-google tech-icon"></i>
+                <span class="tech-name">Google Ads</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-facebook tech-icon"></i>
+                <span class="tech-name">Facebook Ads</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-chart-bar tech-icon"></i>
+                <span class="tech-name">Relatórios</span>
               </div>
             </div>
           </div>
