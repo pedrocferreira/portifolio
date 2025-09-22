@@ -244,7 +244,7 @@
               <h3>ESG Data Crawler</h3>
               <p>Crawlers desenvolvidos em Python para coleta e análise automatizada de relatórios ESG de empresas. Sistema capaz de extrair dados de sustentabilidade, processar informações e gerar insights valiosos para análise de investimentos responsáveis.</p>
               <div class="project-links">
-                <a href="https://github.com/pedro-ferreira/esg-crawler" class="btn" target="_blank">Ver no GitHub</a>
+                <a href="https://github.com/pedrocferreira/esg-puppeteer" class="btn" target="_blank">Ver no GitHub</a>
                 <a href="#" class="btn btn-secondary">Saiba mais</a>
               </div>
             </div>
