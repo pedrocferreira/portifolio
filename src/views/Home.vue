@@ -325,6 +325,11 @@
         </div>
       </div>
     </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5551981281898" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
   </div>
 </template>
 
