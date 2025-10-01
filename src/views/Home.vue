@@ -292,13 +292,16 @@
             <p>Respondo rapidamente e adoro discutir sobre tecnologia, IA e soluções inovadoras.</p>
             
             <div class="social-links">
-              <a href="https://github.com/pedro-ferreira" class="social-link" target="_blank">
+              <a href="https://github.com/pedroocferreira" class="social-link" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://linkedin.com/in/pedro-ferreira-dev" class="social-link" target="_blank">
+              <a href="https://www.linkedin.com/in/pedroocferreira/" class="social-link" target="_blank">
                 <i class="fab fa-linkedin"></i>
               </a>
-              <a href="mailto:pedro@exemplo.com" class="social-link">
+              <a href="https://wa.me/5551981281898" class="social-link" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="mailto:pedroocferreira@gmail.com" class="social-link">
                 <i class="fas fa-envelope"></i>
               </a>
             </div>
