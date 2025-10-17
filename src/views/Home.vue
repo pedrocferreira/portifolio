@@ -5,7 +5,7 @@
       <div class="container hero__container">
         <div class="hero__visual">
           <div class="hero__image-wrapper">
-            <img src="/avatar.jpg" alt="Pedro Ferreira" class="hero__image" />
+            <img :src="avatarUrl" alt="Pedro Ferreira" class="hero__image" />
             <div class="hero__badge">
               <span></span>
               <strong>Disponível</strong>
@@ -52,7 +52,7 @@
           </div>
 
           <div class="hero__cta">
-            <a href="/cv-pedro-ferreira.pdf" class="btn btn--primary" download>
+            <a :href="cvUrl" class="btn btn--primary" download="CV-Pedro-Ferreira.pdf">
               <i class="fas fa-download"></i>
               Download CV
             </a>
@@ -94,7 +94,7 @@
           <div class="about__media" v-animate-on-scroll data-animate="zoom-in">
             <video 
               class="about__video"
-              src="/pedroTrabalhando.mp4" 
+              :src="videoUrl" 
               alt="Pedro trabalhando" 
               autoplay 
               muted 
@@ -389,6 +389,18 @@ export default {
         email: '',
         message: ''
       }
+    }
+  },
+  computed: {
+    cvUrl() {
+      // Usar o BASE_URL do Vite para funcionar em produção e desenvolvimento
+      return `${import.meta.env.BASE_URL}cv-pedro-ferreira.pdf`
+    },
+    avatarUrl() {
+      return `${import.meta.env.BASE_URL}avatar.jpg`
+    },
+    videoUrl() {
+      return `${import.meta.env.BASE_URL}pedroTrabalhando.mp4`
     }
   },
   methods: {
