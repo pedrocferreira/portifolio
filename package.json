@@ -6,9 +6,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "server": "node server.js",
+    "start": "npm run build && npm run server"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
   },

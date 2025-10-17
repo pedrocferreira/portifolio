@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <Header />
+    <Header @scroll-top="scrollToTop" />
     <main class="main">
       <router-view />
     </main>
-    <Footer />
+    <Footer @scroll-top="scrollToTop" />
   </div>
 </template>
 
@@ -17,6 +17,14 @@ export default {
   components: {
     Header,
     Footer
+  },
+  methods: {
+    scrollToTop() {
+      const element = document.getElementById('home')
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
   }
 }
 </script>
