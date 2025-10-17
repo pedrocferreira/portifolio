@@ -2,46 +2,156 @@
   <div class="home">
     <!-- Hero Section -->
     <section id="home" class="hero">
-      <div class="container">
-        <img src="/avatar.jpg" alt="Pedro Ferreira" class="hero-image" />
-        <h1>Olá, sou Pedro Ferreira</h1>
-        <p>Desenvolvedor Full Stack com experiência em Python, PHP e Inteligência Artificial. Crio soluções escaláveis, chatbots inteligentes e crawlers de dados.</p>
-        <div>
-          <a href="/cv-pedro-ferreira.pdf" class="btn" download>Download CV</a>
-          <a href="#contact" class="btn btn-secondary" @click="scrollTo('contact')">Entre em Contato</a>
+      <div class="container hero__container">
+        <div class="hero__visual">
+          <div class="hero__image-wrapper">
+            <img src="/avatar.jpg" alt="Pedro Ferreira" class="hero__image" />
+            <div class="hero__badge">
+              <span></span>
+              <strong>Disponível</strong>
+            </div>
+          </div>
         </div>
+
+        <div class="hero__content">
+          <span class="hero__tag">
+            <i class="fas fa-code"></i>
+            Desenvolvedor Full Stack & IA
+          </span>
+
+          <h1 class="hero__title">
+            Soluções digitais sob medida para acelerar o seu negócio.
+          </h1>
+
+          <p class="hero__subtitle">
+            Especialista em Python, PHP, Vue e Inteligência Artificial. Transformo ideias em produtos digitais que entregam resultados mensuráveis.
+          </p>
+
+          <div class="hero__highlights">
+            <div class="hero__highlight">
+              <i class="fas fa-clock"></i>
+              <div>
+                <strong>7+ anos</strong>
+                <span>de experiência</span>
+              </div>
+            </div>
+            <div class="hero__highlight">
+              <i class="fas fa-project-diagram"></i>
+              <div>
+                <strong>40+</strong>
+                <span>projetos entregues</span>
+              </div>
+            </div>
+            <div class="hero__highlight">
+              <i class="fas fa-users"></i>
+              <div>
+                <strong>92%</strong>
+                <span>clientes recorrentes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__cta">
+            <a href="/cv-pedro-ferreira.pdf" class="btn btn--primary" download>
+              <i class="fas fa-download"></i>
+              Download CV
+            </a>
+            <button class="btn btn--ghost" type="button" @click="scrollTo('projects')">
+              Ver Projetos
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="hero__tech">
+            <span>Stack principal:</span>
+            <div class="hero__tech-list">
+              <span>Python</span>
+              <span>Laravel</span>
+              <span>Vue.js</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" @click="scrollTo('about')">
+        <span>Role para saber mais</span>
+        <i class="fas fa-arrow-down"></i>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section section--contrast">
       <div class="container">
-        <h2 class="section-title">Sobre Mim</h2>
-        <div class="about-content">
-          <div class="about-image">
+        <div class="section__header" v-animate-on-scroll data-animate="fade-up">
+          <span class="section__eyebrow">Sobre mim</span>
+          <h2 class="section__title">Transformo desafios complexos em experiências digitais memoráveis.</h2>
+          <p class="section__subtitle">
+            Minha jornada combina engenharia de software, automação inteligente e design centrado no usuário para construir produtos que performam.
+          </p>
+        </div>
+
+        <div class="about__content" v-animate-on-scroll data-animate="fade-up" data-animate-delay="120">
+          <div class="about__media" v-animate-on-scroll data-animate="zoom-in">
             <video 
+              class="about__video"
               src="/pedroTrabalhando.mp4" 
               alt="Pedro trabalhando" 
               autoplay 
               muted 
               loop 
-              style="width: 100%; border-radius: 15px; max-height: 300px; object-fit: cover;"
+              playsinline
             />
-          </div>
-          <div class="about-text">
-            <h3>Minha Trajetória</h3>
-            <p>Sou um desenvolvedor Full Stack apaixonado por tecnologia e inovação, com expertise em desenvolvimento web, automação e soluções de Inteligência Artificial. Minha jornada começou com PHP e Python, evoluindo para incluir tecnologias modernas de frontend e infraestrutura.</p>
-            <p>Tenho facilidade para aprender novas tecnologias rapidamente e me adaptar a diferentes projetos e desafios. Sempre busco criar soluções eficientes e escaláveis que agreguem valor real aos negócios, desde desenvolvimento web até automação de processos e marketing digital.</p>
-            <p>Minha experiência inclui desenvolvimento de sistemas web robustos, automação com Selenium e Puppeteer, integração com APIs de IA (OpenAI, LangChain), gestão de infraestrutura com Docker e VPS, além de campanhas de marketing digital e SEO.</p>
-            
-            <div class="skills">
-              <span class="skill-tag">Desenvolvimento Full Stack</span>
-              <span class="skill-tag">Automação & Web Scraping</span>
-              <span class="skill-tag">IA & Machine Learning</span>
-              <span class="skill-tag">DevOps & Infraestrutura</span>
-              <span class="skill-tag">Marketing Digital & SEO</span>
-              <span class="skill-tag">Integração de APIs</span>
+            <div class="about__badge" v-tilt>
+              <span>+7 anos</span>
+              <small>Construindo produtos digitais</small>
             </div>
+          </div>
+
+          <div class="about__details" v-animate-on-scroll data-animate="fade-left" data-animate-delay="160">
+            <div class="about__grid">
+              <article class="about__card" v-animate-on-scroll data-animate="fade-up" data-animate-delay="120">
+                <h3>Full Stack & Arquitetura</h3>
+                <p>
+                  Projetos completos do backend ao frontend com foco em escalabilidade, performance e segurança. Experiência com microsserviços, APIs e integrações complexas.
+                </p>
+              </article>
+
+              <article class="about__card" v-animate-on-scroll data-animate="fade-up" data-animate-delay="200">
+                <h3>Automação & IA aplicada</h3>
+                <p>
+                  Robots inteligentes, chatbots e pipelines de dados com LangChain, OpenAI, Selenium e RAG para transformar dados em insights acionáveis.
+                </p>
+              </article>
+
+              <article class="about__card" v-animate-on-scroll data-animate="fade-up" data-animate-delay="280">
+                <h3>DevOps & Observabilidade</h3>
+                <p>
+                  Entregas contínuas com Docker, CI/CD, monitoramento e infraestrutura resiliente em cloud (AWS, VPS, Nginx, Portainer).
+                </p>
+              </article>
+
+              <article class="about__card" v-animate-on-scroll data-animate="fade-up" data-animate-delay="360">
+                <h3>Growth & Estratégia digital</h3>
+                <p>
+                  Implementação de estratégias de SEO, automações de marketing e sistemas de relatórios para potencializar resultados.
+                </p>
+              </article>
+            </div>
+
+            <ul class="about__stats" v-animate-on-scroll data-animate="fade-up" data-animate-delay="420">
+              <li>
+                <span>40+</span>
+                <small>Projetos entregues</small>
+              </li>
+              <li>
+                <span>12</span>
+                <small>Produtos de SaaS lançados</small>
+              </li>
+              <li>
+                <span>5 países</span>
+                <small>Clientes atendidos</small>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -50,279 +160,215 @@
     <!-- Technologies Section -->
     <section id="technologies" class="section">
       <div class="container">
-        <h2 class="section-title">Tecnologias</h2>
-        <div class="tech-grid">
-          <div class="tech-category">
-            <h3>Backend</h3>
-            <div class="tech-icons">
-              <div class="tech-item">
-                <i class="fab fa-php tech-icon"></i>
-                <span class="tech-name">PHP</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-laravel tech-icon"></i>
-                <span class="tech-name">Laravel</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-code tech-icon"></i>
-                <span class="tech-name">CodeIgniter</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-python tech-icon"></i>
-                <span class="tech-name">Python</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-python tech-icon"></i>
-                <span class="tech-name">Django</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-python tech-icon"></i>
-                <span class="tech-name">Flask</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-node-js tech-icon"></i>
-                <span class="tech-name">Node.js</span>
-              </div>
-            </div>
+        <div class="section__header" v-animate-on-scroll data-animate="fade-up">
+          <span class="section__eyebrow">Stack principal</span>
+          <h2 class="section__title">Ferramentas que uso para acelerar entregas.</h2>
+          <p class="section__subtitle">
+            Escolho tecnologias de acordo com o contexto do negócio, garantindo equilíbrio entre velocidade, manutenibilidade e inovação.
+          </p>
           </div>
           
-          <div class="tech-category">
-            <h3>Frontend</h3>
-            <div class="tech-icons">
-              <div class="tech-item">
-                <i class="fab fa-js-square tech-icon"></i>
-                <span class="tech-name">JavaScript</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-angular tech-icon"></i>
-                <span class="tech-name">Angular</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-vuejs tech-icon"></i>
-                <span class="tech-name">Vue.js</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-react tech-icon"></i>
-                <span class="tech-name">React</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-bootstrap tech-icon"></i>
-                <span class="tech-name">Bootstrap</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-css3-alt tech-icon"></i>
-                <span class="tech-name">Tailwind CSS</span>
-              </div>
-            </div>
+        <div class="tech__grid">
+          <div class="tech__column" v-animate-on-scroll data-animate="fade-right">
+            <h3>Backend & APIs</h3>
+            <ul class="tech__list">
+              <li>
+                <span class="tech__icon"><i class="fab fa-python"></i></span>
+                <span>Python · Django · FastAPI</span>
+              </li>
+              <li>
+                <span class="tech__icon"><i class="fab fa-php"></i></span>
+                <span>PHP · Laravel · CodeIgniter</span>
+              </li>
+              <li>
+                <span class="tech__icon"><i class="fab fa-node-js"></i></span>
+                <span>Node.js · Express · Nest</span>
+              </li>
+              <li>
+                <span class="tech__icon"><i class="fas fa-database"></i></span>
+                <span>PostgreSQL · MySQL · MongoDB</span>
+              </li>
+            </ul>
           </div>
           
-          <div class="tech-category">
-            <h3>Banco de Dados</h3>
-            <div class="tech-icons">
-              <div class="tech-item">
-                <i class="fas fa-database tech-icon"></i>
-                <span class="tech-name">MySQL</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-database tech-icon"></i>
-                <span class="tech-name">PostgreSQL</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-leaf tech-icon"></i>
-                <span class="tech-name">MongoDB</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-memory tech-icon"></i>
-                <span class="tech-name">Redis</span>
-              </div>
-            </div>
+          <div class="tech__column" v-animate-on-scroll data-animate="fade-up" data-animate-delay="140">
+            <h3>Frontend & Produtos</h3>
+            <ul class="tech__list">
+              <li>
+                <span class="tech__icon"><i class="fab fa-vuejs"></i></span>
+                <span>Vue.js · Nuxt · React</span>
+              </li>
+              <li>
+                <span class="tech__icon"><i class="fas fa-code"></i></span>
+                <span>TypeScript · Vite</span>
+              </li>
+              <li>
+                <span class="tech__icon"><i class="fab fa-css3-alt"></i></span>
+                <span>Tailwind · Styled Systems</span>
+              </li>
+              <li>
+                <span class="tech__icon"><i class="fas fa-shapes"></i></span>
+                <span>Design Systems escaláveis</span>
+              </li>
+            </ul>
           </div>
           
-          <div class="tech-category">
-            <h3>IA & Automação</h3>
-            <div class="tech-icons">
-              <div class="tech-item">
-                <i class="fas fa-robot tech-icon"></i>
-                <span class="tech-name">OpenAI API</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-link tech-icon"></i>
-                <span class="tech-name">LangChain</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-brain tech-icon"></i>
-                <span class="tech-name">NLP</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-cog tech-icon"></i>
-                <span class="tech-name">Selenium</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-cog tech-icon"></i>
-                <span class="tech-name">Puppeteer</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-project-diagram tech-icon"></i>
-                <span class="tech-name">N8N</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="tech-category">
-            <h3>DevOps & Infraestrutura</h3>
-            <div class="tech-icons">
-              <div class="tech-item">
-                <i class="fas fa-server tech-icon"></i>
-                <span class="tech-name">VPS</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-docker tech-icon"></i>
-                <span class="tech-name">Docker</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-cube tech-icon"></i>
-                <span class="tech-name">Portainer.io</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-server tech-icon"></i>
-                <span class="tech-name">Nginx</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-server tech-icon"></i>
-                <span class="tech-name">Apache</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-aws tech-icon"></i>
-                <span class="tech-name">AWS</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-git-alt tech-icon"></i>
-                <span class="tech-name">Git/GitHub</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-sync-alt tech-icon"></i>
-                <span class="tech-name">CI/CD</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="tech-category">
-            <h3>Marketing & SEO</h3>
-            <div class="tech-icons">
-              <div class="tech-item">
-                <i class="fas fa-search tech-icon"></i>
-                <span class="tech-name">SEO</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-google tech-icon"></i>
-                <span class="tech-name">Google Ads</span>
-              </div>
-              <div class="tech-item">
-                <i class="fab fa-facebook tech-icon"></i>
-                <span class="tech-name">Facebook Ads</span>
-              </div>
-              <div class="tech-item">
-                <i class="fas fa-chart-bar tech-icon"></i>
-                <span class="tech-name">Relatórios</span>
-              </div>
-            </div>
+          <div class="tech__column" v-animate-on-scroll data-animate="fade-left" data-animate-delay="240">
+            <h3>IA, Automação & DevOps</h3>
+            <ul class="tech__list">
+              <li>
+                <span class="tech__icon"><i class="fas fa-robot"></i></span>
+                <span>LangChain · OpenAI · RAG</span>
+              </li>
+              <li>
+                <span class="tech__icon"><i class="fas fa-cogs"></i></span>
+                <span>Selenium · Puppeteer · N8N</span>
+              </li>
+              <li>
+                <span class="tech__icon"><i class="fab fa-docker"></i></span>
+                <span>Docker · CI/CD · Observabilidade</span>
+              </li>
+              <li>
+                <span class="tech__icon"><i class="fab fa-aws"></i></span>
+                <span>Infraestrutura em AWS e VPS</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section section--contrast">
       <div class="container">
-        <h2 class="section-title">Projetos</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <i class="fas fa-spider"></i>
+        <div class="section__header" v-animate-on-scroll data-animate="fade-up">
+          <span class="section__eyebrow">Projetos</span>
+          <h2 class="section__title">Casos de uso que combinam tecnologia e impacto.</h2>
+          <p class="section__subtitle">
+            Projetos construídos com foco em escala, automação e entrega de valor contínuo.
+          </p>
             </div>
-            <div class="project-content">
+
+        <div class="projects__grid">
+          <article class="project" v-animate-on-scroll data-animate="fade-right">
+            <div class="project__header">
+              <span class="project__icon"><i class="fas fa-spider"></i></span>
+              <div>
+                <span class="project__tag">Data Intelligence</span>
               <h3>ESG Data Crawler</h3>
-              <p>Crawlers desenvolvidos em Python para coleta e análise automatizada de relatórios ESG de empresas. Sistema capaz de extrair dados de sustentabilidade, processar informações e gerar insights valiosos para análise de investimentos responsáveis.</p>
-              <div class="project-links">
-                <a href="https://github.com/pedrocferreira/esg-puppeteer" class="btn" target="_blank">Ver no GitHub</a>
-                <a href="#" class="btn btn-secondary">Saiba mais</a>
               </div>
             </div>
-          </div>
-          
-          <div class="project-card">
-            <div class="project-image">
-              <i class="fas fa-robot"></i>
+            <p>
+              Plataforma para coleta, processamento e análise de relatórios ESG com crawlers inteligentes. Dados prontos para dashboards e avaliação de investimentos responsáveis.
+            </p>
+            <ul class="project__stack">
+              <li>Python</li>
+              <li>LangChain</li>
+              <li>Docker</li>
+            </ul>
+            <div class="project__actions">
+              <a href="https://github.com/pedrocferreira/esg-puppeteer" target="_blank" rel="noopener" class="btn btn--primary">GitHub</a>
+              <button type="button" class="btn btn--ghost">Case completo</button>
             </div>
-            <div class="project-content">
+          </article>
+
+          <article class="project" v-animate-on-scroll data-animate="fade-up" data-animate-delay="160">
+            <div class="project__header">
+              <span class="project__icon"><i class="fas fa-robot"></i></span>
+              <div>
+                <span class="project__tag">Conversational AI</span>
               <h3>Chatbot Inteligente</h3>
-              <p>Chatbot avançado desenvolvido com LLM e LangChain, capaz de processar PDFs e imagens. Sistema de RAG (Retrieval-Augmented Generation) que permite conversas contextuais baseadas em documentos específicos, ideal para suporte ao cliente e consultas especializadas.</p>
-              <div class="project-links">
-                <a href="https://github.com/pedro-ferreira/chatbot-llm" class="btn" target="_blank">Ver no GitHub</a>
-                <a href="#" class="btn btn-secondary">Saiba mais</a>
               </div>
             </div>
-          </div>
-          
-          <div class="project-card">
-            <div class="project-image">
-              <i class="fas fa-globe"></i>
+            <p>
+              Assistente com RAG e LangChain capaz de consultar PDFs, imagens e bancos de dados. Permite criar fluxos customizados para suporte e consultoria especializada.
+            </p>
+            <ul class="project__stack">
+              <li>Vue.js</li>
+              <li>LangChain</li>
+              <li>OpenAI</li>
+            </ul>
+            <div class="project__actions">
+              <a href="https://github.com/pedro-ferreira/chatbot-llm" target="_blank" rel="noopener" class="btn btn--primary">GitHub</a>
+              <button type="button" class="btn btn--ghost">Case completo</button>
             </div>
-            <div class="project-content">
+          </article>
+
+          <article class="project" v-animate-on-scroll data-animate="fade-left" data-animate-delay="240">
+            <div class="project__header">
+              <span class="project__icon"><i class="fas fa-globe"></i></span>
+              <div>
+                <span class="project__tag">Product Ops</span>
               <h3>Sistemas Web & Integrações</h3>
-              <p>Desenvolvimento de aplicações web robustas em PHP e Python com integrações RESTful. Inclui sistemas de gestão, APIs personalizadas, integração com serviços externos e dashboards interativos para visualização de dados em tempo real.</p>
-              <div class="project-links">
-                <a href="https://github.com/pedro-ferreira/web-systems" class="btn" target="_blank">Ver no GitHub</a>
-                <a href="#" class="btn btn-secondary">Saiba mais</a>
               </div>
             </div>
+            <p>
+              Aplicações web robustas com integrações RESTful, dashboards em tempo real e automação de processos críticos para equipes operacionais.
+            </p>
+            <ul class="project__stack">
+              <li>Laravel</li>
+              <li>Vue.js</li>
+              <li>CI/CD</li>
+            </ul>
+            <div class="project__actions">
+              <a href="https://github.com/pedro-ferreira/web-systems" target="_blank" rel="noopener" class="btn btn--primary">GitHub</a>
+              <button type="button" class="btn btn--ghost">Case completo</button>
           </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Contato</h2>
-        <div class="contact-content">
-          <div class="contact-info">
-            <h3>Vamos conversar!</h3>
-            <p>Estou sempre aberto a novas oportunidades e projetos interessantes. Se você tem uma ideia ou precisa de um desenvolvedor para seu projeto, entre em contato comigo!</p>
-            <p>Respondo rapidamente e adoro discutir sobre tecnologia, IA e soluções inovadoras.</p>
-            
-            <div class="social-links">
-              <a href="https://github.com/pedroocferreira" class="social-link" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/pedroocferreira/" class="social-link" target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://wa.me/5551981281898" class="social-link" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-              </a>
-              <a href="mailto:pedroocferreira@gmail.com" class="social-link">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </div>
+      <div class="container contact" v-animate-on-scroll data-animate="fade-up">
+        <div class="contact__intro" v-animate-on-scroll data-animate="fade-up" data-animate-delay="120">
+          <span class="section__eyebrow">Contato</span>
+          <h2>Vamos construir algo juntos?</h2>
+          <p>
+            Adoro conversar sobre novos desafios, produtos digitais e automações inteligentes. Respondo em até 24 horas.
+          </p>
+          <div class="contact__channels">
+            <a href="mailto:pedroocferreira@gmail.com" class="contact__channel">
+              <i class="fas fa-envelope"></i>
+              pedroocferreira@gmail.com
+            </a>
+            <a href="tel:+5551981281898" class="contact__channel">
+              <i class="fas fa-phone"></i>
+              +55 51 98128-1898
+            </a>
+            <a href="https://wa.me/5551981281898" class="contact__channel contact__whatsapp" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i>
+              WhatsApp Direto
+            </a>
+          </div>
+          <div class="contact__social">
+            <a href="https://github.com/pedroocferreira" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/pedroocferreira/" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+          </div>
           </div>
           
-          <form class="contact-form" @submit.prevent="submitForm">
-            <div class="form-group">
+        <form class="contact__form" @submit.prevent="submitForm" v-animate-on-scroll data-animate="fade-left" data-animate-delay="200">
+          <div class="form__group">
               <label for="name">Nome</label>
               <input type="text" id="name" v-model="form.name" required>
             </div>
-            <div class="form-group">
+          <div class="form__group">
               <label for="email">Email</label>
               <input type="email" id="email" v-model="form.email" required>
             </div>
-            <div class="form-group">
+          <div class="form__group">
               <label for="message">Mensagem</label>
-              <textarea id="message" v-model="form.message" required></textarea>
+            <textarea id="message" v-model="form.message" rows="4" required></textarea>
             </div>
-            <button type="submit" class="btn">Enviar Mensagem</button>
+          <button type="submit" class="btn btn--primary">Enviar mensagem</button>
           </form>
-        </div>
       </div>
     </section>
 
@@ -352,10 +398,47 @@ export default {
         element.scrollIntoView({ behavior: 'smooth' })
       }
     },
-    submitForm() {
-      // Aqui você pode implementar o envio do formulário
-      alert('Mensagem enviada com sucesso! Entrarei em contato em breve.')
-      this.form = { name: '', email: '', message: '' }
+    async submitForm() {
+      try {
+        // Validação básica
+        if (!this.form.name || !this.form.email || !this.form.message) {
+          alert('Por favor, preencha todos os campos.')
+          return
+        }
+
+        // Mostrar loading
+        const submitBtn = document.querySelector('.contact__form button[type="submit"]')
+        const originalText = submitBtn.textContent
+        submitBtn.textContent = 'Enviando...'
+        submitBtn.disabled = true
+
+        // Enviar dados para o backend
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(this.form)
+        })
+
+        const result = await response.json()
+
+        if (result.success) {
+          alert('✅ ' + result.message)
+          this.form = { name: '', email: '', message: '' }
+        } else {
+          alert('❌ ' + result.message)
+        }
+
+      } catch (error) {
+        console.error('Erro ao enviar formulário:', error)
+        alert('❌ Erro ao enviar mensagem. Tente novamente ou entre em contato pelo WhatsApp.')
+      } finally {
+        // Restaurar botão
+        const submitBtn = document.querySelector('.contact__form button[type="submit"]')
+        submitBtn.textContent = originalText
+        submitBtn.disabled = false
+      }
     }
   }
 }
