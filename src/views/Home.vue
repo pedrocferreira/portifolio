@@ -52,7 +52,7 @@
           </div>
 
           <div class="hero__cta">
-            <a :href="cvUrl" class="btn btn--primary" download="CV-Pedro-Ferreira.pdf">
+            <a :href="cvUrl" class="btn btn--primary" download="CV-pedroocferreira.pdf">
               <i class="fas fa-download"></i>
               Download CV
             </a>
@@ -289,7 +289,7 @@
               <li>OpenAI</li>
             </ul>
             <div class="project__actions">
-              <a href="https://github.com/pedro-ferreira/chatbot-llm" target="_blank" rel="noopener" class="btn btn--primary">GitHub</a>
+              <a href="https://github.com/pedroocferreira/chatbot-llm" target="_blank" rel="noopener" class="btn btn--primary">GitHub</a>
               <button type="button" class="btn btn--ghost">Case completo</button>
             </div>
           </article>
@@ -311,7 +311,7 @@
               <li>CI/CD</li>
             </ul>
             <div class="project__actions">
-              <a href="https://github.com/pedro-ferreira/web-systems" target="_blank" rel="noopener" class="btn btn--primary">GitHub</a>
+              <a href="https://github.com/pedroocferreira/web-systems" target="_blank" rel="noopener" class="btn btn--primary">GitHub</a>
               <button type="button" class="btn btn--ghost">Case completo</button>
           </div>
           </article>
@@ -394,7 +394,7 @@ export default {
   computed: {
     cvUrl() {
       // Usar o BASE_URL do Vite para funcionar em produção e desenvolvimento
-      return `${import.meta.env.BASE_URL}cv-pedro-ferreira.pdf`
+      return `${import.meta.env.BASE_URL}cv-pedroocferreira.pdf`
     },
     avatarUrl() {
       return `${import.meta.env.BASE_URL}avatar.jpg`
